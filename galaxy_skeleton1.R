@@ -12,6 +12,7 @@ galaxy <- readLines(con = "https://www.sao.ru/lv/lvgdb/article/suites_dw_Table1.
 
 # Identify the line number L of the separator line between the column names and
 # the rest of the data table.
+# 33
 L <- which(startsWith(galaxy, "----"))
 
 # Save the variable descriptions (i.e. the information in lines 1:(L-2)) in a
