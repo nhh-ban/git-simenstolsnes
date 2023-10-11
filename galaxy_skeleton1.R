@@ -16,7 +16,7 @@ L <- which(startsWith(galaxy, "----"))
 
 # Save the variable descriptions (i.e. the information in lines 1:(L-2)) in a
 # text-file for future reference using the cat()-function
-cat(galaxy[1:(L-2)], file = "description.txt")
+cat(galaxy[1:(L-2)], file = "description.txt", sep = "\n")
 
 # Extract the variable names (i.e. line (L-1)), store the names in a vector.
 variable_names <- str_replace_all(galaxy[(L-1)], " ", "") 
