@@ -37,7 +37,7 @@ comma_seperated_values_with_names <- c(paste(variable_names, collapse = ","),
                                        comma_seperated_values)
 
 # saving the file
-cat(a, file = "galaxies.csv", sep = "\n")
+cat(comma_seperated_values_with_names, file = "galaxies.csv", sep = "\n")
 
 # Read the finished .csv back into R in the normal way.
 galaxies_new <- read.csv("galaxies.csv")
