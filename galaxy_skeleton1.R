@@ -51,7 +51,7 @@ galaxies_new %>%
   geom_smooth(aes(x = D, y = log_lk))
 
 # fewer small galaxies close to us
-
+# change
 
 # problem 4
 # load data
